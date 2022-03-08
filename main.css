@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;500&display=swap");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #1b2029;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+body {
+  background-color: #fff;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Poppins";
+  color: #1b2029;
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-family: "Oswald";
+}
+
+.nav__title, .nav__title-link, .nav__closeButton {
+  font-size: 1.5rem;
+  font-family: "Oswald";
+  color: #dee2e6;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  font-weight: light;
+  color: #dee2e6;
+  letter-spacing: 0.1rem;
+}
+
+.nav__icon {
+  font-size: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  padding: 2em;
+}
+.header__container {
+  padding: 1em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__profile {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: space-evenly;
+  padding-right: 2em;
+  width: 10%;
+}
+
+.nav {
+  background: #5c677d;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 10vw;
+  display: flex;
+  flex-direction: column;
+  position: fixed !important;
+  top: 0;
+  left: -7.5vw;
+}
+.nav__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+}
+.nav__closeButton:hover {
+  color: #5c677d;
+  cursor: pointer;
+}
+.nav__list {
+  margin-top: 10em;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2em 0;
+  position: relative;
+  z-index: 99;
+}
+.nav__item:hover {
+  background: #ced4da;
+}
+.nav__item:hover .nav__link {
+  color: #5c677d;
+}
+.nav__icon {
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+}
+
+.open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  left: -7.5vw;
+  transition: all 0.5s ease;
+}
+
+.main {
+  height: 100%;
+  padding: 1em 1em 1em 6em;
+  display: grid;
+  grid-template-areas: "card1 card1 card2" "card3 card4 card5" "card6 card6 card7" "card8 card9 card9";
+  gap: 1em;
+  background: #000;
+}
+
+@media (min-width: 576px) {
+  .main {
+    grid-template-areas: "card1 card1 card1" "card2 card2 card2" "card3 card3 card3" "card4 card4 card4" "card5 card5 card5" "card6 card6 card6" "card7 card7 card7" "card8 card8 card8" "card9 card9 card9";
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    grid-template-areas: "card1 card1 card1" "card2 card2 card2" "card3 card3 card3" "card4 card4 card4" "card5 card5 card5" "card6 card6 card6" "card7 card7 card7" "card8 card8 card8" "card9 card9 card9";
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    grid-template-areas: "card1 card1 card1 card1" "card2 card2 card3 card3" "card4 card4 card5 card5" "card6 card6 card6 card6" "card7 card7 card8 card8" "card9 card9 card9 card9";
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    grid-template-areas: "card1 card1 card2" "card3 card4 card5" "card6 card6 card7" "card8 card9 card9";
+  }
+}
+@media (min-width: 1400px) {
+  .main {
+    grid-template-areas: "card1 card1 card2" "card3 card4 card5" "card6 card6 card7" "card8 card9 card9";
+  }
+}
+.card {
+  height: 35em;
+  background: #1b2029;
+  color: #5c677d;
+  border-radius: 0.5em;
+}
+.card__header {
+  border-bottom: 1px solid #ced4da;
+  padding: 0.75em;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__link {
+  color: #5c677d;
+}
+.card__content {
+  width: 100%;
+  height: 100%;
+  max-height: 29em;
+  max-width: 30em;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.card6 {
+  grid-area: card6;
+}
+
+.card7 {
+  grid-area: card7;
+}
+
+.card8 {
+  grid-area: card8;
+}
+
+.card9 {
+  grid-area: card9;
+}
+
+.header {
+  background: #a7a7a7;
+  color: #dee2e6;
+}
+.header__favicon {
+  width: 100%;
+  max-width: 4em;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
