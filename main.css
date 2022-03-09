@@ -86,6 +86,10 @@ body {
   color: #dee2e6;
 }
 
+.nav__closeButton {
+  color: #ced4da;
+}
+
 .nav__link {
   font-size: 1.2rem;
   font-weight: light;
